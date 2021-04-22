@@ -46,7 +46,7 @@ for i in range(4):
     # Capture all the video items using find_all or findAll method.
     # To view the information of the html elements you want to collect, you need to inspect the raw source using Chrome Inspector.
     # To test whether you find the right html elements, you can use the pycharm debugger to examine the returned data.
-    videos = soup.find_all('ytd-video-renderer', class_="style-scope ytd-item-section-renderer")[-20:] # 20 indicates only process the newly-acquired 20 entries.
+    videos = soup.find_all('ytd-video-renderer', class_="style-scope ytd-item-section-renderer")[-30:] # 20 indicates only process the newly-acquired 20 entries.
 
     # iterate and process each video entry.
     for video in videos:
